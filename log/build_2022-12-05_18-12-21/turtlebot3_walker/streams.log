@@ -1,0 +1,74 @@
+[0.008s] Invoking command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chotu/ros2_turtlebot3walker -DCMAKE_INSTALL_PREFIX=/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker
+[0.043s] -- The C compiler identification is GNU 11.3.0
+[0.082s] -- The CXX compiler identification is GNU 11.3.0
+[0.086s] -- Detecting C compiler ABI info
+[0.126s] -- Detecting C compiler ABI info - done
+[0.131s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.131s] -- Detecting C compile features
+[0.131s] -- Detecting C compile features - done
+[0.133s] -- Detecting CXX compiler ABI info
+[0.181s] -- Detecting CXX compiler ABI info - done
+[0.186s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.186s] -- Detecting CXX compile features
+[0.187s] -- Detecting CXX compile features - done
+[0.188s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.302s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.360s] -- Found rclcpp: 16.0.2 (/opt/ros/humble/share/rclcpp/cmake)
+[0.403s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.407s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.413s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.422s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.479s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.480s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.533s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.551s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.581s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.587s] -- Looking for pthread.h
+[0.629s] -- Looking for pthread.h - found
+[0.629s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.671s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.672s] -- Found Threads: TRUE  
+[0.780s] -- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.809s] -- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.867s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.930s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.930s] -- Configured cppcheck include dirs: 
+[0.930s] -- Configured cppcheck exclude dirs and/or files: 
+[0.931s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.934s] -- Added test 'lint_cmake' to check CMake code style
+[0.935s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.943s] -- Added test 'uncrustify' to check C / C++ code style
+[0.943s] -- Configured uncrustify additional arguments: 
+[0.944s] -- Added test 'xmllint' to check XML markup files
+[0.945s] -- Configuring done
+[0.951s] -- Generating done
+[0.952s] -- Build files have been written to: /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker
+[0.958s] Invoked command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chotu/ros2_turtlebot3walker -DCMAKE_INSTALL_PREFIX=/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker
+[0.959s] Invoking command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker -- -j16 -l16
+[0.992s] [ 50%] [32mBuilding CXX object CMakeFiles/walker.dir/src/robot_walker.cpp.o[0m
+[6.594s] [100%] [32m[1mLinking CXX executable walker[0m
+[6.829s] [100%] Built target walker
+[6.838s] Invoked command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker -- -j16 -l16
+[6.855s] Invoking command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker
+[6.859s] -- Install configuration: ""
+[6.859s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/lib/turtlebot3_walker/walker
+[6.862s] -- Set runtime path of "/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/lib/turtlebot3_walker/walker" to ""
+[6.862s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker//launch
+[6.862s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker//launch/tb3_walker.launch.py
+[6.862s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/ament_index/resource_index/package_run_dependencies/turtlebot3_walker
+[6.862s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/ament_index/resource_index/parent_prefix_path/turtlebot3_walker
+[6.862s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/ament_prefix_path.sh
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/ament_prefix_path.dsv
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/path.sh
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/path.dsv
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.bash
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.sh
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.zsh
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.dsv
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/package.dsv
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/ament_index/resource_index/packages/turtlebot3_walker
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/cmake/turtlebot3_walkerConfig.cmake
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/cmake/turtlebot3_walkerConfig-version.cmake
+[6.863s] -- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/package.xml
+[6.865s] Invoked command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker

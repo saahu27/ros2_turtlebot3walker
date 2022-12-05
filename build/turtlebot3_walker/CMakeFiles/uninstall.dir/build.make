@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chotu/turtlebot3_walker
+CMAKE_SOURCE_DIR = /home/chotu/ros2_turtlebot3walker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chotu/turtlebot3_walker/build/turtlebot3_walker
+CMAKE_BINARY_DIR = /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/chotu/turtlebot3_walker/build/turtlebot3_walker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chotu/turtlebot3_walker /home/chotu/turtlebot3_walker /home/chotu/turtlebot3_walker/build/turtlebot3_walker /home/chotu/turtlebot3_walker/build/turtlebot3_walker /home/chotu/turtlebot3_walker/build/turtlebot3_walker/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chotu/ros2_turtlebot3walker /home/chotu/ros2_turtlebot3walker /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

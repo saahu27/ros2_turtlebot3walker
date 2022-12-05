@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chotu/turtlebot3_walker
+CMAKE_SOURCE_DIR = /home/chotu/ros2_turtlebot3walker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chotu/turtlebot3_walker/build/turtlebot3_walker
+CMAKE_BINARY_DIR = /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker
 
 # Utility rule file for turtlebot3_walker_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/turtlebot3_walker_uninstall.dir/compiler_depend.make
 include CMakeFiles/turtlebot3_walker_uninstall.dir/progress.make
 
 CMakeFiles/turtlebot3_walker_uninstall:
-	/usr/bin/cmake -P /home/chotu/turtlebot3_walker/build/turtlebot3_walker/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 turtlebot3_walker_uninstall: CMakeFiles/turtlebot3_walker_uninstall
 turtlebot3_walker_uninstall: CMakeFiles/turtlebot3_walker_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/turtlebot3_walker_uninstall.dir/clean:
 .PHONY : CMakeFiles/turtlebot3_walker_uninstall.dir/clean
 
 CMakeFiles/turtlebot3_walker_uninstall.dir/depend:
-	cd /home/chotu/turtlebot3_walker/build/turtlebot3_walker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chotu/turtlebot3_walker /home/chotu/turtlebot3_walker /home/chotu/turtlebot3_walker/build/turtlebot3_walker /home/chotu/turtlebot3_walker/build/turtlebot3_walker /home/chotu/turtlebot3_walker/build/turtlebot3_walker/CMakeFiles/turtlebot3_walker_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chotu/ros2_turtlebot3walker /home/chotu/ros2_turtlebot3walker /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker/CMakeFiles/turtlebot3_walker_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/turtlebot3_walker_uninstall.dir/depend
 

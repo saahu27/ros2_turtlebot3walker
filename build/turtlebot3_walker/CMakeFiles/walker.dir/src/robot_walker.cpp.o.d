@@ -1,7 +1,7 @@
 CMakeFiles/walker.dir/src/robot_walker.cpp.o: \
- /home/chotu/turtlebot3_walker/src/robot_walker.cpp \
+ /home/chotu/ros2_turtlebot3walker/src/robot_walker.cpp \
  /usr/include/stdc-predef.h \
- /home/chotu/turtlebot3_walker/src/../include/turtlebot3_walker/Tb3Walker.hpp \
+ /home/chotu/ros2_turtlebot3walker/src/../include/turtlebot3_walker/Tb3Walker.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
