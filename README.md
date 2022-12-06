@@ -23,7 +23,7 @@ Implementation of a simple turtlebot to move in the world trying to avoid obstac
 * ```turtlebot3_simulations```
 * ```turtlebot3_msgs```
 
-
+---
 
 ## Build Instructions
 ```
@@ -33,7 +33,7 @@ cd ..
 rosdep install -i --from-path src --rosdistro humble -y
 colcon build --packages-select turtlebot3_walker
 ```
-
+---
 ## Run Instructions
 
 ### Simulation
@@ -55,7 +55,7 @@ To play ros bag
 ```
 ros2 bag play walker_bag
 ```
-
+---
 Results
 cpplint
 
