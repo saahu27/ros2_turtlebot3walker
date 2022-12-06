@@ -14,7 +14,7 @@
 
 /**
  * @file Tb3Walker.hpp
- * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
+ * @author Sahruday Patti
  * @brief Class definition of the Turtlebot3 Walker
  * @version 0.1
  * @date 2022-12-05
