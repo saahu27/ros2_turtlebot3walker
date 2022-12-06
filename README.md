@@ -18,6 +18,12 @@ Implementation of a simple walker algorithm where the TurtleBot3 moves in the wo
 * ```rclcpp```
 * ```geometry_msgs```
 * ```sensor_msgs```
+* ```turtlebot3```
+* ```gazebo```
+* ```turtlebot3_simulations```
+* ```turtlebot3_msgs```
+
+
 
 ## Build Instructions
 ```
@@ -37,5 +43,28 @@ In a terminal, navigate to your ROS2 workspace (```ros2_ws```) and source the se
 cd <path-to-ROS2-workspace>/ros2_ws
 . install/setup.bash
 export TURTLEBOT3_MODEL=waffle_pi
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:`ros2 pkg prefix turtlebot3_gazebo `/share/turtlebot3_gazebo/models/
 ros2 launch turtlebot3_walker tb3_walker.launch.py
 ```
+```
+ros2 run turtlebot3_walker walker
+```
+```
+ros2 run turtlebot3_walker walker
+```
+
+Results
+cpplint
+
+Change to the root directory of the package, /turtlebot3_walker, and run:
+
+cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order ./src/*.cpp ./include/turtlebot3_walker/*.hpp > ./results/cpplint.txt
+
+The results of running cpplint can be found in /results/cpplint.txt.
+cppcheck
+
+Change to the root directory of the package, /turtlebot3_walker, and run:
+
+cppcheck --enable=all --std=c++17 ./src/*.cpp ./include/turtlebot3_walker/*.hpp --suppress=missingIncludeSystem --suppress=unmatchedSuppression --suppress=unusedFunction --suppress=missingInclude --suppress=useInitializationList > results/cppcheck.txt
+
+The results of running cppcheck can be found in /results/cppcheck.txt.
