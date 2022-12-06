@@ -19,24 +19,10 @@ Implementation of a simple walker algorithm where the TurtleBot3 moves in the wo
 * ```geometry_msgs```
 * ```sensor_msgs```
 
-### Environment Setup
-```
-. <path-to-ROS2-installation>/ros2_humble/install/local_setup.bash
-```
-
-### Clang
-```
-sudo apt install clang
-export CC=clang
-export CXX=clang++
-colcon build --cmake-force-configure
-```
-
-
 ## Build Instructions
 ```
 cd <path-to-ROS2-workspace>/ros2_ws/src
-git clone https://github.com/adarshmalapaka/turtlebot3_walker.git
+git clone 
 cd ..  
 rosdep install -i --from-path src --rosdistro humble -y
 colcon build --packages-select turtlebot3_walker
@@ -50,5 +36,6 @@ In a terminal, navigate to your ROS2 workspace (```ros2_ws```) and source the se
 ```
 cd <path-to-ROS2-workspace>/ros2_ws
 . install/setup.bash
+export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch turtlebot3_walker tb3_walker.launch.py
 ```
