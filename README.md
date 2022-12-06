@@ -22,6 +22,7 @@ Implementation of a simple turtlebot to move in the world trying to avoid obstac
 * ```gazebo```
 * ```turtlebot3_simulations```
 * ```turtlebot3_msgs```
+* ```dynamixel-sdk```
 
 ---
 
