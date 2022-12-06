@@ -1,4 +1,4 @@
-// Copyright 2022 Adarsh M
+// Copyright 2022 sahruday
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
 // limitations under the License.
 /**
  * @file robot_walker.cpp
- * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
+ * @author Sahruday Patti
  * @brief Implementation of the Tb3Walker class methods
  * @version 0.1
  * @date 2022-12-05
