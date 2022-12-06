@@ -5,7 +5,7 @@
 
 ## Overview 
 
-Implementation of a simple walker algorithm where the TurtleBot3 moves in the world trying to avoid obstacles and collisions. 
+Implementation of a simple turtlebot to move in the world trying to avoid obstacles. 
 
 ## Assumptions
 * OS: Ubuntu Linux Focal (20.04) 64-bit
