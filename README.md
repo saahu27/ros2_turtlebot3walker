@@ -36,5 +36,6 @@ In a terminal, navigate to your ROS2 workspace (```ros2_ws```) and source the se
 ```
 cd <path-to-ROS2-workspace>/ros2_ws
 . install/setup.bash
+export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch turtlebot3_walker tb3_walker.launch.py
 ```
