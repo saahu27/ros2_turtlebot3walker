@@ -46,11 +46,14 @@ export TURTLEBOT3_MODEL=waffle_pi
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:`ros2 pkg prefix turtlebot3_gazebo `/share/turtlebot3_gazebo/models/
 ros2 launch turtlebot3_walker tb3_walker.launch.py
 ```
+To run :
 ```
 ros2 run turtlebot3_walker walker
 ```
+
+To play ros bag
 ```
-ros2 run turtlebot3_walker walker
+ros2 bag play walker_bag
 ```
 
 Results
