@@ -1,4 +1,4 @@
-// Copyright Venkata Sai Ram Polina
+// Copyright Venkata Sahruday
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 /**
  * @file walker_node.cpp
- * @author Sairam Polina (sairamp@umd.edu)
+ * @author Sahruday Patti
  * @brief Illustration of walker algorithm
  * @version 0.1
  * @date 2022-11-16
