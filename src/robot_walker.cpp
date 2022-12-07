@@ -1,4 +1,4 @@
-// Copyright 2022 sahruday
+// Copyright Venkata Sai Ram Polina
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -11,117 +11,104 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 /**
- * @file robot_walker.cpp
- * @author Sahruday Patti
- * @brief Implementation of the Tb3Walker class methods
+ * @file walker_node.cpp
+ * @author Sairam Polina (sairamp@umd.edu)
+ * @brief Illustration of walker algorithm
  * @version 0.1
- * @date 2022-12-05
+ * @date 2022-11-16
  * 
  * @copyright Copyright (c) 2022
  * 
  */
 
-#include "../include/turtlebot3_walker/Tb3Walker.hpp"
 
-Tb3Walker::Tb3Walker()
-    : Node("walker"),
-      left_dist_(0.0),
-      center_dist_(0.0),
-      right_dist_(0.0),
-      state_(STOP) {
-       auto pubTopicName = "cmd_vel";
-       publisher_ = this->create_publisher<TWIST> (pubTopicName, 10);
+#include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/twist.hpp>
+#include <sensor_msgs/msg/laser_scan.hpp>
 
-       auto subTopicName = "/scan";
-       auto subCallback = std::bind(&Tb3Walker::scan_callback, this, _1);
-       subscription_ = this->create_subscription<SCAN>
-                    (subTopicName, 10, subCallback);
+using std::placeholders::_1;
+using namespace std::chrono_literals;
 
-       auto timerCallback = std::bind(&Tb3Walker::timer_callback, this);
-       timer_ = this->create_wall_timer(100ms, timerCallback);
-}
+class ObstacleAvoidance : public rclcpp::Node {
+ public:
+  ObstacleAvoidance():
+          Node("walker_node") {
+            /**
+             * @brief Initializing a publisher and subscriber.
+             * 
+             */
 
-void Tb3Walker::scan_callback(const SCAN& msg) {
-    scan_ = msg;
-}
+            vel_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(
+            "cmd_vel", 10);
 
-void Tb3Walker::timer_callback() {
-    // wait until the first scan data is read.
-    if (scan_.header.stamp.sec == 0)
-      return;
+            lidar_subscriber_ = this->create_subscription<sensor_msgs::msg::LaserScan> (
+              "scan", 5, std::bind(&ObstacleAvoidance::lidar_callback, this, _1));
+          }
 
-    auto message = TWIST();
+ private:
+    /**
+     * @brief function to check for obstacles
+     * 
+     * if obstacle distance is less than threshold it rotates robot
+     * 
+     * @param msg : Lidar message
+     */
 
-    switch (state_) {
-        case FORWARD:
-        if (detect_obstacle()) {
-            state_ = STOP;
-            message.linear.x = 0.0;
-            message.linear.y = 0.0;
-            message.linear.z = 0.0;
-            publisher_->publish(message);
-            RCLCPP_INFO_STREAM(this->get_logger(), "State = STOP");
+    void lidar_callback(const sensor_msgs::msg::LaserScan &msg) {
+      if (msg.header.stamp.sec == 0) {
+        return;
+      }
+      auto lidar_data = msg.ranges;
+      auto field_of_view = 60;
+      auto angle_initial = 330;
+
+      bool flag = false;
+
+      for (int i = angle_initial ; i < angle_initial + field_of_view ; i++) {
+        if (lidar_data[i % 360] < 0.5) {
+          flag = true;
+          break;
         }
-        break;
+      }
 
-        case STOP:
-        if (detect_obstacle()) {
-            state_ = TURN;
-            message.angular.z = 0.1;
-            publisher_->publish(message);
-            RCLCPP_INFO_STREAM(this->get_logger(), "State = TURN");
-        } else {
-            state_ = FORWARD;
-            message.linear.x = 0.2;
-            publisher_->publish(message);
-            RCLCPP_INFO_STREAM(this->get_logger(), "State = FORWARD");
-        }
-        break;
-
-        case TURN:
-        if (!detect_obstacle()) {
-            state_ = FORWARD;
-            message.linear.x = 0.2;
-            publisher_->publish(message);
-            RCLCPP_INFO_STREAM(this->get_logger(), "State = FORWARD");
-        }
-        break;
-    }
-}
-
-bool Tb3Walker::detect_obstacle() {
-    // For laser scans with non-zero minimium angle
-    if (scan_.angle_min != 0) {
-        // Index for the center laser scan ray
-        auto ray_idx = static_cast<int>(
-            (scan_.angle_max - scan_.angle_min)/(scan_.angle_increment) - 1);
-        center_dist_ = scan_.ranges[ray_idx];
-        left_dist_ = scan_.ranges[ray_idx - 25];
-        right_dist_ = scan_.ranges[ray_idx + 25];
-    } else {
-        auto ray_idx = 0;
-        center_dist_ = scan_.ranges[ray_idx];
-        left_dist_ =
-                    scan_.ranges[(scan_.angle_max/scan_.angle_increment) - 25];
-        right_dist_ = scan_.ranges[ray_idx + 25];
+      if (flag) {
+          move_robot(0.0, 0.3);
+      } else {
+          move_robot(0.5, 0.0);
+      }
     }
 
-    RCLCPP_INFO_STREAM(this->get_logger(), "Distance: " << left_dist_ <<
-                 " " << center_dist_ << " " << right_dist_);
+    /**
+     * @brief function to move robot straight when there is no obstacle 
+     * 
+     * else rotate robot
+     * 
+     * @param x_velocity : linear velocity
+     * @param z_velocity  : angular velocity
+     */
 
-    // Obstacle is detected if either of the laser scan rays picks up one.
-    if (left_dist_ < 0.8 || center_dist_ < 0.8 || right_dist_ < 0.8) {
-        RCLCPP_INFO_STREAM(this->get_logger(), "Obstacle detected!");
-        return true;
+    void move_robot(double x_velocity , double z_velocity) {
+      auto velocity = geometry_msgs::msg::Twist();
+
+      velocity.linear.x = x_velocity;
+      velocity.angular.z = z_velocity;
+
+      vel_publisher_-> publish(velocity);
     }
 
-    return false;
-}
+    /**
+     * @brief private data_members
+     * 
+     */
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_publisher_;
+    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr lidar_subscriber_;
+};
 
-int main(int argc, char * argv[]) {
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<Tb3Walker>());
-  rclcpp::shutdown();
-  return 0;
+int main(int argc, char **argv) {
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_unique<ObstacleAvoidance>());
+    rclcpp::shutdown();
+    return 0;
 }
