@@ -4,7 +4,7 @@
   <name>turtlebot3_walker</name>
   <version>0.0.1</version>
   <description>Implementation of a simple walker algorithm for a TurtleBot3</description>
-  <maintainer email="adarshmalapaka98@gmail.com">sahruday</maintainer>
+  <maintainer email="sahrudayPatti">sahruday</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
