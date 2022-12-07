@@ -1,6 +1,0 @@
-Invoking command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chotu/ros2_turtlebot3walker -DCMAKE_INSTALL_PREFIX=/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker
-Invoked command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chotu/ros2_turtlebot3walker -DCMAKE_INSTALL_PREFIX=/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker
-Invoking command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker -- -j16 -l16
-Invoked command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker -- -j16 -l16
-Invoking command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker
-Invoked command in '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker
