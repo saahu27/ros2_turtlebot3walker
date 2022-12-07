@@ -1,0 +1,162 @@
+[0.000000] (-) TimerEvent: {}
+[0.000134] (turtlebot3_walker) JobQueued: {'identifier': 'turtlebot3_walker', 'dependencies': OrderedDict()}
+[0.000414] (turtlebot3_walker) JobStarted: {'identifier': 'turtlebot3_walker'}
+[0.007052] (turtlebot3_walker) JobProgress: {'identifier': 'turtlebot3_walker', 'progress': 'cmake'}
+[0.007230] (turtlebot3_walker) Command: {'cmd': ['/usr/bin/cmake', '/home/chotu/ros2_turtlebot3walker', '-DCMAKE_INSTALL_PREFIX=/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker'], 'cwd': '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker', 'env': OrderedDict([('USER', 'chotu'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chotu'), ('OLDPWD', '/home/chotu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2797'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chotu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chotu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chotu25:@/tmp/.ICE-unix/2518,unix/chotu25:/tmp/.ICE-unix/2518'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b69f23c_63a4_4521_acaf_5f6f9c7d1d2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.916'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.046611] (turtlebot3_walker) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.082355] (turtlebot3_walker) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.086574] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099050] (-) TimerEvent: {}
+[0.130856] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.135848] (turtlebot3_walker) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.136076] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.136264] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.138327] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.192578] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.197790] (turtlebot3_walker) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.197989] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.198293] (turtlebot3_walker) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.199102] (-) TimerEvent: {}
+[0.200054] (turtlebot3_walker) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299228] (-) TimerEvent: {}
+[0.331285] (turtlebot3_walker) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.399344] (-) TimerEvent: {}
+[0.402735] (turtlebot3_walker) StdoutLine: {'line': b'-- Found rclcpp: 16.0.2 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.436349] (turtlebot3_walker) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.439545] (turtlebot3_walker) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.446401] (turtlebot3_walker) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.462431] (turtlebot3_walker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.477338] (turtlebot3_walker) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499449] (-) TimerEvent: {}
+[0.542659] (turtlebot3_walker) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.544187] (turtlebot3_walker) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.599611] (-) TimerEvent: {}
+[0.611778] (turtlebot3_walker) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.639091] (turtlebot3_walker) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.678269] (turtlebot3_walker) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.685886] (turtlebot3_walker) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.699795] (-) TimerEvent: {}
+[0.748880] (turtlebot3_walker) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.749254] (turtlebot3_walker) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.799858] (-) TimerEvent: {}
+[0.802185] (turtlebot3_walker) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.802985] (turtlebot3_walker) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.899983] (-) TimerEvent: {}
+[0.922387] (turtlebot3_walker) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.956995] (turtlebot3_walker) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.000104] (-) TimerEvent: {}
+[1.022459] (turtlebot3_walker) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.088625] (turtlebot3_walker) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.088796] (turtlebot3_walker) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.088858] (turtlebot3_walker) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.089426] (turtlebot3_walker) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.090616] (turtlebot3_walker) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.091348] (turtlebot3_walker) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.095375] (turtlebot3_walker) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.095468] (turtlebot3_walker) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.096153] (turtlebot3_walker) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.096936] (turtlebot3_walker) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.100145] (-) TimerEvent: {}
+[1.104022] (turtlebot3_walker) StdoutLine: {'line': b'-- Generating done\n'}
+[1.105131] (turtlebot3_walker) StdoutLine: {'line': b'-- Build files have been written to: /home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker\n'}
+[1.112162] (turtlebot3_walker) CommandEnded: {'returncode': 0}
+[1.112871] (turtlebot3_walker) JobProgress: {'identifier': 'turtlebot3_walker', 'progress': 'build'}
+[1.113498] (turtlebot3_walker) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker', '--', '-j16', '-l16'], 'cwd': '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker', 'env': OrderedDict([('USER', 'chotu'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chotu'), ('OLDPWD', '/home/chotu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2797'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chotu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chotu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chotu25:@/tmp/.ICE-unix/2518,unix/chotu25:/tmp/.ICE-unix/2518'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b69f23c_63a4_4521_acaf_5f6f9c7d1d2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.916'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.148886] (turtlebot3_walker) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/walker.dir/src/robot_walker.cpp.o\x1b[0m\n'}
+[1.200279] (-) TimerEvent: {}
+[1.300571] (-) TimerEvent: {}
+[1.400883] (-) TimerEvent: {}
+[1.501279] (-) TimerEvent: {}
+[1.601624] (-) TimerEvent: {}
+[1.702034] (-) TimerEvent: {}
+[1.802488] (-) TimerEvent: {}
+[1.902906] (-) TimerEvent: {}
+[2.003166] (-) TimerEvent: {}
+[2.103463] (-) TimerEvent: {}
+[2.203914] (-) TimerEvent: {}
+[2.304356] (-) TimerEvent: {}
+[2.404615] (-) TimerEvent: {}
+[2.504932] (-) TimerEvent: {}
+[2.605302] (-) TimerEvent: {}
+[2.705565] (-) TimerEvent: {}
+[2.805820] (-) TimerEvent: {}
+[2.906191] (-) TimerEvent: {}
+[3.006610] (-) TimerEvent: {}
+[3.106897] (-) TimerEvent: {}
+[3.207222] (-) TimerEvent: {}
+[3.307595] (-) TimerEvent: {}
+[3.407850] (-) TimerEvent: {}
+[3.508093] (-) TimerEvent: {}
+[3.608382] (-) TimerEvent: {}
+[3.708834] (-) TimerEvent: {}
+[3.809078] (-) TimerEvent: {}
+[3.909325] (-) TimerEvent: {}
+[4.009633] (-) TimerEvent: {}
+[4.110061] (-) TimerEvent: {}
+[4.210321] (-) TimerEvent: {}
+[4.310585] (-) TimerEvent: {}
+[4.410924] (-) TimerEvent: {}
+[4.511340] (-) TimerEvent: {}
+[4.611594] (-) TimerEvent: {}
+[4.711883] (-) TimerEvent: {}
+[4.812299] (-) TimerEvent: {}
+[4.912692] (-) TimerEvent: {}
+[5.012978] (-) TimerEvent: {}
+[5.113318] (-) TimerEvent: {}
+[5.213784] (-) TimerEvent: {}
+[5.314042] (-) TimerEvent: {}
+[5.414362] (-) TimerEvent: {}
+[5.514791] (-) TimerEvent: {}
+[5.615217] (-) TimerEvent: {}
+[5.715457] (-) TimerEvent: {}
+[5.815750] (-) TimerEvent: {}
+[5.916174] (-) TimerEvent: {}
+[6.016577] (-) TimerEvent: {}
+[6.116828] (-) TimerEvent: {}
+[6.217138] (-) TimerEvent: {}
+[6.317513] (-) TimerEvent: {}
+[6.417875] (-) TimerEvent: {}
+[6.518194] (-) TimerEvent: {}
+[6.618624] (-) TimerEvent: {}
+[6.719005] (-) TimerEvent: {}
+[6.819246] (-) TimerEvent: {}
+[6.919550] (-) TimerEvent: {}
+[7.019924] (-) TimerEvent: {}
+[7.120181] (-) TimerEvent: {}
+[7.220425] (-) TimerEvent: {}
+[7.320754] (-) TimerEvent: {}
+[7.421128] (-) TimerEvent: {}
+[7.521387] (-) TimerEvent: {}
+[7.621694] (-) TimerEvent: {}
+[7.722136] (-) TimerEvent: {}
+[7.728315] (turtlebot3_walker) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable walker\x1b[0m\n'}
+[7.822204] (-) TimerEvent: {}
+[7.922457] (-) TimerEvent: {}
+[8.009545] (turtlebot3_walker) StdoutLine: {'line': b'[100%] Built target walker\n'}
+[8.018276] (turtlebot3_walker) CommandEnded: {'returncode': 0}
+[8.022512] (-) TimerEvent: {}
+[8.032271] (turtlebot3_walker) JobProgress: {'identifier': 'turtlebot3_walker', 'progress': 'install'}
+[8.037789] (turtlebot3_walker) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker'], 'cwd': '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker', 'env': OrderedDict([('USER', 'chotu'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/chotu'), ('OLDPWD', '/home/chotu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2797'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chotu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'chotu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/chotu25:@/tmp/.ICE-unix/2518,unix/chotu25:/tmp/.ICE-unix/2518'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7b69f23c_63a4_4521_acaf_5f6f9c7d1d2f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('GNOME_TERMINAL_SERVICE', ':1.916'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/chotu/ros2_turtlebot3walker/build/turtlebot3_walker'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.044134] (turtlebot3_walker) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.044342] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/lib/turtlebot3_walker/walker\n'}
+[8.046832] (turtlebot3_walker) StdoutLine: {'line': b'-- Set runtime path of "/home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/lib/turtlebot3_walker/walker" to ""\n'}
+[8.046921] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker//launch\n'}
+[8.046993] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker//launch/tb3_walker.launch.py\n'}
+[8.047077] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/ament_index/resource_index/package_run_dependencies/turtlebot3_walker\n'}
+[8.047139] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/ament_index/resource_index/parent_prefix_path/turtlebot3_walker\n'}
+[8.047215] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/ament_prefix_path.sh\n'}
+[8.047278] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/ament_prefix_path.dsv\n'}
+[8.047339] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/path.sh\n'}
+[8.047397] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/environment/path.dsv\n'}
+[8.047454] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.bash\n'}
+[8.047566] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.sh\n'}
+[8.047627] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.zsh\n'}
+[8.047689] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/local_setup.dsv\n'}
+[8.047749] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/package.dsv\n'}
+[8.047808] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/ament_index/resource_index/packages/turtlebot3_walker\n'}
+[8.047869] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/cmake/turtlebot3_walkerConfig.cmake\n'}
+[8.047925] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/cmake/turtlebot3_walkerConfig-version.cmake\n'}
+[8.047982] (turtlebot3_walker) StdoutLine: {'line': b'-- Installing: /home/chotu/ros2_turtlebot3walker/install/turtlebot3_walker/share/turtlebot3_walker/package.xml\n'}
+[8.049160] (turtlebot3_walker) CommandEnded: {'returncode': 0}
+[8.081700] (turtlebot3_walker) JobEnded: {'identifier': 'turtlebot3_walker', 'rc': 0}
+[8.082161] (-) EventReactorShutdown: {}
